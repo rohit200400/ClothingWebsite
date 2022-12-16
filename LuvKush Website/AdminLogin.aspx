@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="LoginPage.aspx.cs" Inherits="LuvKush_Website.LoginPage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="AdminLogin.aspx.cs" Inherits="LuvKush_Website.AdminLogin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="container">
+        <div class="container">
         <div class="row m-auto">
             <div class="col-lg-6 m-auto">
                 <div class="card">
@@ -13,7 +13,7 @@
                         <div class="row">
                             <div class="col">
                                 <center>
-                                    <i class="fa-solid fa-user fa-2x"></i>
+                                    <i class="fa-solid fa-user-lock fa-3x"></i>
                                 </center>
                             </div>
                         </div>
@@ -22,7 +22,7 @@
                         <div class="row m-auto">
                             <div class="col m-auto">
                                 <center>
-                                    <h3>Member Login</h3>
+                                    <h3>Admin Login</h3>
                                 </center>
                             </div>
                         </div>
@@ -37,10 +37,9 @@
                         <%--User ID box--%>
                         <div class="row">
                             <div class="col">
-                                <label>Login ID</label>
                                 <div class="form-group">
                                     <asp:TextBox CssClass="form-control mb-2" ID="TextBox1" runat="server"
-                                        palceholder="Login ID"></asp:TextBox>
+                                        placeholder="Admin ID"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -48,10 +47,9 @@
                         <%--Password box--%>
                         <div class="row">
                             <div class="col">
-                                <label>Password</label>
                                 <div class="form-group">
                                     <asp:TextBox CssClass="form-control mb-3" ID="TextBox2" runat="server"
-                                        palceholder="Password" TextMode="Password"></asp:TextBox>
+                                        placeholder="Password" TextMode="Password"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -62,11 +60,6 @@
                                 runat="server" Text="Login" />
                         </div>
 
-                        <%--Signup Button html--%>
-                        <div class="d-grid gap-2 ">
-                            <a class="btn btn-info" href="UserSignUp.aspx" role="button">Sign Up</a>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -75,5 +68,6 @@
             <a href="homepage.aspx"><< Back to Home</a>
         </div>
     </div>
+
 
 </asp:Content>

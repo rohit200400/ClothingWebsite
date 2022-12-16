@@ -11,7 +11,7 @@ namespace LuvKush_Website
 {
 
 
-    public partial class LoginPage
+    public partial class AdminLogin
     {
 
         /// <summary>
