@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="UserSignUp.aspx.cs" Inherits="LuvKush_Website.UserSignUp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMaster" runat="server">
 
         <div class="container">
         <div class="row m-auto">
@@ -40,8 +40,8 @@
                             <div class="col-md-6">
                                 <label>Full Name</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control mb-2" ID="TextBox1" runat="server"
-                                        palceholder="Name"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control mb-2" ID="TBSUName" runat="server"
+                                        placeholder="Name"></asp:TextBox>
                                 </div>
                             </div>
 
@@ -49,8 +49,8 @@
                             <div class="col-md-6">
                                 <label>Date of Birth</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control mb-2" ID="TextBox3" runat="server" TextMode="Date"
-                                        palceholder="Login ID"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control mb-2" ID="TBSUDOB" runat="server" TextMode="Date"
+                                        placeholder="Login ID"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -60,8 +60,8 @@
                             <div class="col-md-6">
                                 <label>Contact Number</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control mb-2" ID="TextBox4" runat="server"
-                                        palceholder="Name" TextMode="Phone"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control mb-2" ID="TBSUPhone" runat="server"
+                                        placeholder="Name" TextMode="Phone"></asp:TextBox>
                                 </div>
                             </div>
 
@@ -69,8 +69,8 @@
                             <div class="col-md-6">
                                 <label>Email ID</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control mb-2" ID="TextBox5" runat="server" TextMode="Email"
-                                        palceholder="Login ID"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control mb-2" ID="TBSUMail" runat="server" TextMode="Email"
+                                        placeholder="Login ID"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -80,7 +80,7 @@
                             <div class="col-md-4">
                                 <label>State</label>
                                 <div class="form-group">
-                                    <asp:DropDownList class="form-control"  ID="DropDownList1" runat="server">
+                                    <asp:DropDownList class="form-control"  ID="DDLSUState" runat="server">
                                         <asp:ListItem Text="Select" Value="Select"/>
                                         <asp:ListItem Text="Maharashtra" Value="Maharashtra"/>
                                         <asp:ListItem Text="Delhi" Value="Delhi"/>
@@ -95,8 +95,8 @@
                             <div class="col-md-4">
                                 <label>City</label>
                                 <div class="form-group">
-                                    <asp:TextBox class="form-control" ID="TextBox7" runat="server" TextMode="SingleLine"
-                                        palceholder="City"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="TBSUCity" runat="server" TextMode="SingleLine"
+                                        placeholder="City"></asp:TextBox>
                                 </div>
                             </div>
 
@@ -104,8 +104,8 @@
                             <div class="col-md-4">
                                 <label>Pin Code</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control mb-2" ID="TextBox8" runat="server" TextMode="Number"
-                                        palceholder="Login ID"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control mb-2" ID="TBSUPinCode" runat="server" TextMode="Number"
+                                        placeholder="Login ID"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -114,8 +114,8 @@
                             <div class="col">
                                 <label>Address</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control mb-4" ID="TextBox2" runat="server"
-                                        palceholder="Name" TextMode="MultiLine" Rows="2"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control mb-4" ID="TBSUAddress" runat="server"
+                                        placeholder="Name" TextMode="MultiLine" Rows="2"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -135,16 +135,16 @@
                             <div class="col-md-6">
                                 <label>Login ID</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control mb-2" ID="TextBox6" runat="server"
-                                        palceholder="Login ID"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control mb-2" ID="TBSULoginID" runat="server"
+                                        placeholder="Login ID"></asp:TextBox>
                                 </div>
                             </div>
                             <%--Password box--%>
                             <div class="col-md-6">
                                 <label>Password</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control mb-3" ID="TextBox9" runat="server"
-                                        palceholder="Password" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control mb-3" ID="TBSUPwd" runat="server"
+                                        placeholder="Password" TextMode="Password"></asp:TextBox>
                                 </div>
                             </div>
                         </div>

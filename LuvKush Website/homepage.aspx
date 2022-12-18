@@ -13,24 +13,24 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="images/kids-banner (1).jpg" class="img-fluid"/>
-      <div class="carousel-caption d-none d-md-block">
+      <%--<div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
-      </div>
+      </div>--%>
     </div>
     <div class="carousel-item">
         <img src="images/final-banner-1.jpg" />
-      <div class="carousel-caption d-none d-md-block">
+      <%--<div class="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
-      </div>
+      </div>--%>
     </div>
     <div class="carousel-item">
         <img src="images/homebanner02%20(1).jpg" />
-      <div class="carousel-caption d-none d-md-block">
+      <%--<div class="carousel-caption d-none d-md-block">
         <h5>Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>
-      </div>
+      </div>--%>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -88,16 +88,20 @@
         </div>
     </section>
     <%--category--%>
-    <section class="p-2 pt-md-border-4 pb-md-4">
+    <section class="mx-auto my-auto">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row">
                 <div class="col-md-6">
-                    <img src="images/portrait-cute-little-boy-stylish-jeans-clothes-looking-camera-studio.jpg" />
-                        <h5>Boys</h5>
+                    <center><img src="images/portrait-cute-little-boy-stylish-jeans-clothes-looking-camera-studio.jpg" 
+                        style="width:500px;"/>
+                        <center><h5>Boys</h5></center></center>
                 </div>
                 <div class="col-md-6">
-                    <img src="images/portrait-cute-little-boy-stylish-jeans-clothes-looking-camera-studio.jpg" />
-                    <h5>Girls</h5>
+                    <centre>
+                        <img src="images/stylish-little-smiling-girl-posing-dress-isolated-white-studio-background-caucasian-blonde-female-model-human-emotions-facial-expression-childhood-showing-empty-space-bar.jpg"
+                        style="width:500px;"/>
+                        <center><h5>Girls</h5></center>
+                    </centre>
                 </div>
             </div>
         </div>

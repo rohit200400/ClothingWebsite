@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="AdminLogin.aspx.cs" Inherits="LuvKush_Website.AdminLogin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMaster" runat="server">
 
         <div class="container">
         <div class="row m-auto">
@@ -34,11 +34,11 @@
                             </div>
                         </div>
 
-                        <%--User ID box--%>
+                        <%--Admin ID box--%>
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control mb-2" ID="TextBox1" runat="server"
+                                    <asp:TextBox CssClass="form-control mb-2" ID="TBAdminID" runat="server"
                                         placeholder="Admin ID"></asp:TextBox>
                                 </div>
                             </div>
@@ -48,7 +48,7 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control mb-3" ID="TextBox2" runat="server"
+                                    <asp:TextBox CssClass="form-control mb-3" ID="TBAdminPassword" runat="server"
                                         placeholder="Password" TextMode="Password"></asp:TextBox>
                                 </div>
                             </div>
@@ -56,7 +56,7 @@
 
                         <%--Login Button--%>
                         <div class="d-grid gap-4">
-                            <asp:Button class="btn btn-success btn-md my-2" ID="Button1" 
+                            <asp:Button class="btn btn-success btn-md my-2" ID="BtnAdminLogin" 
                                 runat="server" Text="Login" />
                         </div>
 

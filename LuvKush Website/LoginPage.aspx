@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="LoginPage.aspx.cs" Inherits="LuvKush_Website.LoginPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMaster" runat="server">
 
     <div class="container">
         <div class="row m-auto">
@@ -39,8 +39,8 @@
                             <div class="col">
                                 <label>Login ID</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control mb-2" ID="TextBox1" runat="server"
-                                        palceholder="Login ID"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control mb-2" ID="TBLoginID" runat="server"
+                                        placeholder="Login ID"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -50,21 +50,21 @@
                             <div class="col">
                                 <label>Password</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control mb-3" ID="TextBox2" runat="server"
-                                        palceholder="Password" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control mb-3" ID="TBLoginPwd" runat="server"
+                                        placeholder="Password" TextMode="Password"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
 
                         <%--Login Button--%>
                         <div class="d-grid gap-4">
-                            <asp:Button class="btn btn-success btn-md my-2" ID="Button1" 
+                            <asp:Button class="btn btn-success btn-md my-2" ID="BtnLgnLogin" 
                                 runat="server" Text="Login" />
                         </div>
 
                         <%--Signup Button html--%>
                         <div class="d-grid gap-2 ">
-                            <a class="btn btn-info" href="UserSignUp.aspx" role="button">Sign Up</a>
+                            <a class="btn btn-info" href="UserSignUp.aspx" role="button" id="BtnLgnSignup">Sign Up</a>
                         </div>
 
                     </div>

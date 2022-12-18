@@ -11,115 +11,151 @@ namespace LuvKush_Website
 {
 
 
-    public partial class Site1
+    public partial class Inventory
     {
 
         /// <summary>
-        /// head control.
+        /// FUInventory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.FileUpload FUInventory;
 
         /// <summary>
-        /// form1 control.
+        /// TBInvID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox TBInvID;
 
         /// <summary>
-        /// LBViewGarments control.
+        /// LinkButton1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LBViewGarments;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
 
         /// <summary>
-        /// LBLogin control.
+        /// TBInvName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LBLogin;
+        protected global::System.Web.UI.WebControls.TextBox TBInvName;
 
         /// <summary>
-        /// LBSignUp control.
+        /// LBInvCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LBSignUp;
+        protected global::System.Web.UI.WebControls.ListBox LBInvCategory;
 
         /// <summary>
-        /// LBLogout control.
+        /// DDLInvAge control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LBLogout;
+        protected global::System.Web.UI.WebControls.DropDownList DDLInvAge;
 
         /// <summary>
-        /// LBUser control.
+        /// DDLInvGender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LBUser;
+        protected global::System.Web.UI.WebControls.DropDownList DDLInvGender;
 
         /// <summary>
-        /// ContentPlaceHolderMaster control.
+        /// TBInvPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolderMaster;
+        protected global::System.Web.UI.WebControls.TextBox TBInvPrice;
 
         /// <summary>
-        /// LBMasterAdminLogin control.
+        /// DDLInvColor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LBMasterAdminLogin;
+        protected global::System.Web.UI.WebControls.DropDownList DDLInvColor;
 
         /// <summary>
-        /// LBMasterProfileMgnt control.
+        /// DDLInvMaterial control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LBMasterProfileMgnt;
+        protected global::System.Web.UI.WebControls.DropDownList DDLInvMaterial;
 
         /// <summary>
-        /// LBMasterContactUs control.
+        /// DDLInvQuantity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LBMasterContactUs;
+        protected global::System.Web.UI.WebControls.TextBox DDLInvQuantity;
 
         /// <summary>
-        /// LBMasterFAQs control.
+        /// TBInvDesc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LBMasterFAQs;
+        protected global::System.Web.UI.WebControls.TextBox TBInvDesc;
+
+        /// <summary>
+        /// BtnInvUpdate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnInvUpdate;
+
+        /// <summary>
+        /// BtnInvAdd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnInvAdd;
+
+        /// <summary>
+        /// BtnInvDelete control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnInvDelete;
+
+        /// <summary>
+        /// GVInv control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GVInv;
     }
 }

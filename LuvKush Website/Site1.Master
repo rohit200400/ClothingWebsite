@@ -84,7 +84,7 @@
 
         <!--Main Content Placeholder-->
         <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderMaster" runat="server">
             </asp:ContentPlaceHolder>
         </div>
         <!--Main Content Placeholder-->
@@ -94,16 +94,16 @@
                 <div class ="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                         <p>
-                            <asp:LinkButton class="footerlinks" ID="LBAdminLogin" runat="server">
+                            <asp:LinkButton class="footerlinks" ID="LBMasterAdminLogin" runat="server">
                                 Admin Login
                             </asp:LinkButton> &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LBProfileMgnt" runat="server">
+                            <asp:LinkButton class="footerlinks" ID="LBMasterProfileMgnt" runat="server">
                                 Profile Management
                             </asp:LinkButton> &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LBContactUs" runat="server">
+                            <asp:LinkButton class="footerlinks" ID="LBMasterContactUs" runat="server">
                                 Contact Us
                             </asp:LinkButton> &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LBFAQs" runat="server">
+                            <asp:LinkButton class="footerlinks" ID="LBMasterFAQs" runat="server">
                                 FAQs
                             </asp:LinkButton> &nbsp;
                         </p>

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace LuvKush_Website
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class ProfileManagement : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
