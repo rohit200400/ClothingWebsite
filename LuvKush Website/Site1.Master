@@ -1,0 +1,130 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="LuvKush_Website.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <%--bootstrap css--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--dataTable css--%>
+    <link href="DataTabels/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%--fontAwesome css--%>
+    <link href="fontAwesome/css/all.css" rel="stylesheet" />
+    <%--custom css--%>
+    <link href="css/CustomStyleSheet.css" rel="stylesheet" />
+    <%--jquery--%>
+    <script src="bootstrap/JS/bootstrap.bundle.min.js"></script>
+    <%--popper js--%>
+    <script src="bootstrap/JS/popper.min.js"></script>
+    <%--bootstrap js--%>
+    <script src="bootstrap/JS/bootstrap.min.js"></script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav  class="navbar navbar-expand-md navbar-light">
+                <a class ="navbar-brand" href="#">
+                    <img src="images/logo.png" width ="50" height ="40"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class ="collapse navbar-collapse" id="navbarSupportContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="homepage.aspx">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="AboutUs.aspx">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Terms.aspx">Terms</a>
+                        </li>
+                    </ul>
+
+                    <ul class ="navbar-nav">
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LBViewGarments" runat="server">
+                                View Garments
+                            </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LBLogin" runat="server" OnClick="LBLogin_Click">
+                                Login
+                            </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LBSignUp" runat="server" OnClick="LBSignUp_Click">
+                                SignUp
+                            </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LBLogout" runat="server" Visible="false">
+                                logout
+                            </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LBUser" runat="server" OnClick="LBUser_Click" Visible="false">
+                                Hello user
+                            </asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </nav>
+        </div>
+
+        <!--Main Content Placeholder-->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderMaster" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!--Main Content Placeholder-->
+
+        <footer>
+            <div id="footer1" calss="container-fluid">
+                <div class ="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                            <asp:LinkButton class="footerlinks" ID="LBMasterAdminLogin" runat="server" OnClick="LBMasterAdminLogin_Click">
+                                Admin Login
+                            </asp:LinkButton> &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LBMasterProfileMgnt" runat="server" OnClick="LBMasterProfileMgnt_Click" Visible="false" >
+                                Profile Management
+                            </asp:LinkButton> &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LBMasterContactUs" runat="server" OnClick="LBMasterContactUs_Click">
+                                Contact Us
+                            </asp:LinkButton> &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LBMasterFAQs" runat="server" OnClick="LBMasterFAQs_Click">
+                                FAQs
+                            </asp:LinkButton> &nbsp;
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color:whitesmoke"> &copy All right Reserved.
+                            <a class="footerlinks" href="#" target="_blank">
+                                LuvKush Enterprise
+                            </a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </form>
+</body>
+</html>
