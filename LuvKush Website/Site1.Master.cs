@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace LuvKush_Website
 {
@@ -12,6 +7,41 @@ namespace LuvKush_Website
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void LBLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("LoginPage.aspx");
+        }
+
+        protected void LBMasterAdminLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminLogin.aspx");
+        }
+
+        protected void LBSignUp_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("UserSignUp.aspx");
+        }
+
+        protected void LBUser_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Profile.aspx");
+        }
+
+        protected void LBMasterProfileMgnt_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ProfileManagement.aspx");
+        }
+
+        protected void LBMasterContactUs_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ContactUs.aspx");
+        }
+
+        protected void LBMasterFAQs_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("FAQ.aspx");
         }
     }
 }

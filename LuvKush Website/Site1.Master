@@ -42,10 +42,10 @@
                             <a class="nav-link" href="homepage.aspx">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="AboutUs.aspx">About Us</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Terms</a>
+                            <a class="nav-link" href="Terms.aspx">Terms</a>
                         </li>
                     </ul>
 
@@ -56,22 +56,22 @@
                             </asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LBLogin" runat="server">
+                            <asp:LinkButton class="nav-link" ID="LBLogin" runat="server" OnClick="LBLogin_Click">
                                 Login
                             </asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LBSignUp" runat="server">
+                            <asp:LinkButton class="nav-link" ID="LBSignUp" runat="server" OnClick="LBSignUp_Click">
                                 SignUp
                             </asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LBLogout" runat="server">
+                            <asp:LinkButton class="nav-link" ID="LBLogout" runat="server" Visible="false">
                                 logout
                             </asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LBUser" runat="server">
+                            <asp:LinkButton class="nav-link" ID="LBUser" runat="server" OnClick="LBUser_Click" Visible="false">
                                 Hello user
                             </asp:LinkButton>
                         </li>
@@ -94,16 +94,16 @@
                 <div class ="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                         <p>
-                            <asp:LinkButton class="footerlinks" ID="LBMasterAdminLogin" runat="server">
+                            <asp:LinkButton class="footerlinks" ID="LBMasterAdminLogin" runat="server" OnClick="LBMasterAdminLogin_Click">
                                 Admin Login
                             </asp:LinkButton> &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LBMasterProfileMgnt" runat="server">
+                            <asp:LinkButton class="footerlinks" ID="LBMasterProfileMgnt" runat="server" OnClick="LBMasterProfileMgnt_Click" Visible="false" >
                                 Profile Management
                             </asp:LinkButton> &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LBMasterContactUs" runat="server">
+                            <asp:LinkButton class="footerlinks" ID="LBMasterContactUs" runat="server" OnClick="LBMasterContactUs_Click">
                                 Contact Us
                             </asp:LinkButton> &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LBMasterFAQs" runat="server">
+                            <asp:LinkButton class="footerlinks" ID="LBMasterFAQs" runat="server" OnClick="LBMasterFAQs_Click">
                                 FAQs
                             </asp:LinkButton> &nbsp;
                         </p>
