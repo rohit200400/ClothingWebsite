@@ -57,7 +57,7 @@
                         <%--Login Button--%>
                         <div class="d-grid gap-4">
                             <asp:Button class="btn btn-success btn-md my-2" ID="BtnAdminLogin" 
-                                runat="server" Text="Login" />
+                                runat="server" Text="Login" OnClick="BtnAdminLogin_Click" />
                         </div>
 
                     </div>

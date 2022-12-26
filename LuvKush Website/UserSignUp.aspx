@@ -104,7 +104,7 @@
                             <div class="col-md-4">
                                 <label>Pin Code</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control mb-2" ID="TBSUPinCode" runat="server" TextMode="Number"
+                                    <asp:TextBox CssClass="form-control mb-2" ID="TBSUPinCode" runat="server" TextMode="SingleLine"
                                         placeholder="Login ID"></asp:TextBox>
                                 </div>
                             </div>
@@ -147,6 +147,11 @@
                                         placeholder="Password" TextMode="Password"></asp:TextBox>
                                 </div>
                             </div>
+                        </div>
+                        <%--SignUp Button--%>
+                        <div class="d-grid gap-4">
+                            <asp:Button class="btn btn-success btn-md my-2" ID="BtnSUSignUp" 
+                                runat="server" Text="Sign Up" OnClick="BtnSUSignUp_Click" />
                         </div>
                         <%--Login Credentials Ends--%>
 
